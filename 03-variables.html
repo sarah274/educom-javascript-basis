@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    
+    <div id="variables"></div>
+    <script>
+    /// Variables
+        let name = "Bob";
+        let payment = true;
+        document.getElementById("variables").innerHTML =
+        name + "&nbsp" + payment;
+    </script>
+
+   
+    <div id="count"></div>
+    <script>
+    
+    /// No Intialization
+        let count
+        count=1
+        document.getElementById("count").innerHTML =
+        count + 1;
+    </script>
+
+    <div id="arrays"></div>
+    <script>
+
+    ///Arrays
+        let beatles= ["John", "Paul", "Ringo", "George" ]
+        document.getElementById("arrays").innerHTML
+        = beatles;
+    </script>
+
+    <div id="objects"></div>
+    <script>
+    ///Objects
+        let singer = { firstName: "Mick",
+                        lastName: "Jagger",
+                        band: "The Rolling Stones" }
+        document.getElementById("objects").innerHTML=
+        singer.firstName + "&nbsp" + singer.lastName + "&nbsp" + "in" + "&nbsp" + singer.band + "&nbsp" + "band";
+    </script>
+
+    <div id="Arrays-of-objects"></div>
+    <script>
+    ///Arrays of objects
+        let books= [
+            { id: 1, author: "Stephen King", title: "It" }
+            // { id: 2, author: "F. Scott Fitzgerald", title: "The Great Gatsby" }
+        ]
+        document.getElementById("Arrays-of-objects").innerHTML =
+        books.author + books.title
+    </script>
+
+    <div id="Constants"></div>
+    <script>
+    ///Constants
+    const x= 10
+    const y= 100
+    const addUser = () => {}
+    document.getElementById("Constants").innerHTML = addUser
+    </script>
+
+    <div id="assignments"></div>
+    <script>
+    ///Assignments
+    let z= x + y
+    document.getElementById("assignments").innerHTML = z
+    </script>
+
+    <div id="console"></div>
+    <script>
+    ///Console
+    console.log(z)
+    console.log( { SINGER: singer } )
+    console.log(beatles, books)
+    </script>
+
+</body>
+</html>
