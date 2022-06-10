@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical Switch</title>
+
+    <script>
+        const choice = 3
+        let msg = ""
+
+        switch(true) {
+            case (choice < 1): {
+                msg = "Make coffee!"
+                break
+            }
+            case (choice > 2): {
+                msg= "Make tea!"
+                break
+            }
+            default: {
+                msg= "Pour water!"
+                break
+            }
+        }
+
+        console.log (`Message: ${msg}`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
