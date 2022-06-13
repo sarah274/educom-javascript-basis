@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting</title>
+
+    <script>
+        const beatles = ["Ringo", "Paul", "George", "John"]
+        beatles.sort ()
+        console.log (beatles)
+
+        ///But
+        const points = [40, 100, 1, 5, 25, 10]
+        points.sort()
+        console.log ({Strange: points})
+
+        //Let's correct it
+        const points2 = [40, 100, 1, 5, 25, 10]
+        points2.sort ( (a,b) => a-b)
+        console.log ({proper: points2})
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

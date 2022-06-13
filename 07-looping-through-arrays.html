@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping through arrays</title>
+
+    <script>
+        let txt= ""
+        const beatles = ["Ringo", "Paul", "George", "John"]
+
+        const inLoop= (value, index, array) => {
+            txt += value.toUpperCase()
+        }
+
+        beatles.forEach(inLoop)
+        console.log (txt)
+
+        let txt2= ""
+        const beatles2 = ["Ringo", "Paul", "George", "John"]
+        beatles2.forEach ( (value, index, array)=> {
+            txt2 += `${value.toUpperCase()}-`
+        })
+
+        console.log (txt2)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

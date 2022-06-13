@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index of & Find</title>
+
+    <script>
+        const fruit = ["Apple", "Orange", "Apple", "Mango"]
+        const numbers = [4,9,16,25,29]
+
+        //Helper function
+        const findOver18 = (item) => {
+            return item > 18
+        }
+
+        ///indexof
+        const a= fruit.indexOf("Apple")
+        const b= fruit.lastIndexOf("Apple")
+
+        //find
+        const c= numbers.find(findOver18)
+        const d= numbers.findIndex(findOver18)
+
+        console.log ({a:a, b:b, c:c, d:d})
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
