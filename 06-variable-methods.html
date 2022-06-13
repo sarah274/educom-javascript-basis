@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables Methods</title>
+
+    <script>
+        const name = "Bootleg Bob"
+
+        ///Length of the string:
+        const length = name.length
+
+        ///Case manipulation
+        const lowerCase= name.toLowerCase ()
+        const upperCase= name.toUpperCase ()
+
+        ///Replace (only1)
+        const replaced = name.replace('o', 'a')
+        ///ALL with regular expression
+        const replaceALL = name.replace(/o/g, 'a')
+
+        ///Substring
+        const substring = name.substring (2,8)
+
+        ///Array
+        const toArray= name.split (' ')
+
+        console.log ({
+            length: length,
+            lowerCase: lowerCase,
+            upperCase: upperCase,
+            replaced: replaced,
+            replaceALL: replaceALL,
+            substring: substring,
+            toArray: toArray
+        })
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
