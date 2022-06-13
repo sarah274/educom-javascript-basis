@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+
+    <script>
+        const car= {
+            brand: "Fiat",
+            type: "500",
+            color: "Red",
+            weight: 850
+        }
+        car.numberOfDoors= 2
+
+        car.getColor = function () {
+            return(this.color)
+        }
+        console.log (car.getColor())
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
